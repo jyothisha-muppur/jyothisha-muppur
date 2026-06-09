@@ -15,13 +15,21 @@ At **Capital One**, I lead the design of our GenAI infrastructure — Terraform 
 
 I care about systems that don't break at 3 AM, infrastructure people actually want to use, and AI applications you can put in front of regulators.
 
+In my own time, I vibe-code small apps to solve everyday problems — using LLMs as a coding partner to ship working tools fast.
+
 ---
 
 ### What I'm good at
 
 ```text
-🤖  AI/ML & GenAI         RAG · LangChain · LLM fine-tuning · AWS Bedrock · SageMaker
-                          MLflow · OpenSearch · PyTorch · HuggingFace · agent design
+🤖  AI/ML & GenAI         Python · PyTorch · HuggingFace Transformers · LangChain · LangGraph
+                          RAG (vector + lexical) · OpenSearch · AWS Bedrock · SageMaker · MLflow
+                          Agentic workflows · prompt engineering · LLM fine-tuning · evaluation
+                          Production patterns: guardrails · semantic caching · cost optimization
+
+🐍  Python (deep)         FastAPI · Django · PyTorch · LangChain · boto3 · async/await
+                          Built production AWS infrastructure end-to-end in Python — from
+                          architecture and IaC integration through performance testing to prod
 
 ☁️  Cloud & Platform      AWS · GCP · Azure · Terraform · Kubernetes (EKS, GKE)
                           Helm · Docker · CloudFormation · Ansible
@@ -29,8 +37,7 @@ I care about systems that don't break at 3 AM, infrastructure people actually wa
 🔁  DevOps & SRE          Jenkins · GitHub Actions · GitLab CI · blue-green deploys
                           Prometheus · Grafana · on-call rotation · incident response
 
-💻  Software Engineering  Python · Go · Java · FastAPI · Django · Spring Boot
-                          REST APIs · microservices · system design
+💻  Software Engineering  Go · Java · REST APIs · microservices · system design · OAuth/SSO
 
 🔒  Security & Governance OPA/Rego policy-as-code · Wiz CSPM · IAM · RBAC
                           FedRAMP · SOC 2 · GDPR · threat modeling
@@ -40,10 +47,25 @@ I care about systems that don't break at 3 AM, infrastructure people actually wa
 
 ### A few things I've built
 
-- **GenAI infrastructure platform** — Terraform + OPA/Rego policy-as-code, adopted org-wide by 50+ engineers; cut environment provisioning time by 40%
-- **Production RAG platform** — OpenSearch + AWS Bedrock serving 100s of internal users; hardened against vector-search storms with semantic caching and recursive iteration caps
-- **ML inference platform on EKS** — 10–25 production models, FastAPI servers, GPU autoscaling, blue-green deploys with zero downtime
-- **Compliance guardrails** — 100+ Rego policies enforcing IAM, encryption, and network controls; passed FedRAMP and SOC 2 audits
+- **Production RAG platform on AWS Bedrock + OpenSearch** — end-to-end retrieval-augmented generation using LangChain, HuggingFace embeddings, and hybrid (vector + lexical) search; serving hundreds of internal users with sub-second cached response times
+
+- **AWS WAF — from scratch to production (Python)** — architected and built a Web Application Firewall on AWS using Python and boto3; took it from initial design through implementation, performance testing, and production rollout with zero downtime
+
+- **Agentic workflow hardening** — diagnosed and fixed a production vector-search storm caused by recursive LangChain agents under load; implemented context truncation, iteration caps, and Redis-based semantic caching to restore stability
+
+- **AI safety & guardrails** — built PII redaction, output filtering, and prompt-injection defenses for production GenAI services in a regulated financial-services environment
+
+- **LLM cost optimization at scale** — token-budget controls, response-length caps, request batching, and right-sized model selection across Bedrock; centralized model gateway for access control, observability, and usage tracking
+
+- **GenAI infrastructure platform** — Terraform + OPA/Rego policy-as-code, adopted org-wide by 50+ engineers; cut environment provisioning time by 40%; passed FedRAMP and SOC 2 audits
+
+- **ML inference platform on EKS** — multi-tenant FastAPI model serving with GPU autoscaling and blue-green deploys; reduced GPU job wait times by 40% through scheduler tuning
+
+---
+
+### What I'm working on outside of work
+
+I vibe-code utility apps to make daily life smoother — small tools, scripts, and AI-augmented experiments. I'll be open-sourcing some of them here over the coming weeks. The goal: learn fast, ship things, stay sharp on production AI patterns outside the day job.
 
 ---
 
