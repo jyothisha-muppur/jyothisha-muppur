@@ -2,7 +2,7 @@
 
 <p align="center">
   <em>Software Engineer · GenAI Infrastructure · Cloud Security · DevOps</em><br>
-  <em>Austin, TX · 5+ years of shipping production systems</em>
+  <em>5+ years of shipping production systems</em>
 </p>
 
 ---
